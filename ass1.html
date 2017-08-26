@@ -1,0 +1,86 @@
+<!doctype html>
+<head>
+    <style>
+        fieldset{color: black;margin-bottom: 10px; width: 720px; border: 10px solid yellow; background-color: lightyellow}
+        label{width: 180px; display: inline-block; text-align: right, top;}
+        textarea{width: 360px; height: 50px}
+        label:hover, select:hover, span:hover{height: 40px}
+        .backRed{background-color: darkred; color: white; padding-left: 10px; padding-right: 10px; text-align: center}
+        .backPurple{background-color: purple; color: white; padding-left: 10px; padding-right: 10px; text-align: center}
+        .expand:hover{height:40px; width: 500px}
+        #s3{padding-left: 13px; padding-right: 12px}
+        #s4{padding-left: 7px; padding-right: 8px}
+        #iaddress:hover{height:70px; width: 500px}
+        #iaddress{vertical-align: top}
+        #igender{width: auto}
+        #icontact{width: auto}
+    </style>
+    <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+    <title>Dating Website</title>
+    <h1>Please Enter Your Details For Our Dating Website!</h1>
+</head>
+<body>
+</form> 
+    <form method="post" enctype="multipart/form-data" action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" runat="server">
+    <fieldset>
+        <legend>Your Face</legend>
+        <input class="expand" type="file" id="f1" name="Your image"><br>
+        <img id="preview" src="#" alt="Your image" />
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Your General Details</legend>
+        <label for="iname">Name:</label>
+        <input class="expand" type="text" id="iname" name="Name:" placeholder="Your full name" autofocus required><br>
+        <label for="igender">Gender:</label>
+        <input type="radio" id="igender" name="Gender" value="Male" checked required> Male
+        <input type="radio" name="Gender" value="Female"> Female<br>
+        <label for="iage">Age:</label>
+        <input class="expand" type="number" id="iage" name="Age:" placeholder="18" required><br>
+        <label for="idate">Date of birth:</label>
+        <input class="expand" type="date" id="idate" name="Date of birth:" required><br>
+        <label for="icolor">Color:</label>
+        <input class="expand" type="color" id="icolor" name="Favorite color:" required><br>
+        <label for="icountry">Country:</label>Country:
+        <select name="Which country:" id="icountry" required>
+            <option value=""></option>
+            <option value="China">China</option>
+            <option value="United States">United States</option>
+            <option value="Russia">Russia</option>
+            <option value="German">German</option>
+            <option value="Canada">Canada</option>
+            </select>
+    </fieldset><br>
+    
+    <fieldset>
+        <legend>Your Indicators</legend>
+        <label for="r1">Height:</label>
+        <span class="backRed">Short</span>
+        <input id="r1" type="range" value="Height" min="0"; max="100">
+        <span class="backPurple">Tall</span><br>
+        <label for="r2"> Salary:</label>
+        <span id="s3" class="backRed">Poor</span>
+        <input id="r2" type="range" value="Salary" min="0"; max="100">
+        <span id="s4" class="backPurple">Rich</span>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Your Contact Information</legend>
+        <label for="iemail">Email:</label>
+        <input class="expand" type="email" id="iemail" name="email" placeholder="xxx@gmail.com" required><br>
+        <label for="imobile">Mobile:</label>
+        <input class="expand" type="tel" id="imobile" required><br>
+        <label for="iaddress">Address:</label>
+        <textarea rows="5" cols="100" id="iaddress" name="address" required></textarea><br>
+        <label for="icontact">Method to contact you:</label>
+        <input type="checkbox" id="icontact" name="Email">
+        <span> Email </span>
+        <input type="checkbox" name="Whatsapp">
+        <span> Whatsapp </span>
+        <input type="checkbox" name="In-app chat">
+        <span> In-app chat </span>
+        <br>
+    </fieldset><br>
+    <input type="submit" value="Submit">
+    </form>
+</body>
