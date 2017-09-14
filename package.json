@@ -1,0 +1,26 @@
+{
+  "name": "git",
+  "version": "1.0.0",
+  "description": "This is a practice",
+  "main": "index.html",
+  "dependencies": {
+    "lite-server": "^2.3.0",
+    "npm": "^3.10.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcinger/test-my.git"
+  },
+  "author": "Mingyang Zhou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcinger/test-my/issues"
+  },
+  "homepage": "https://github.com/mcinger/test-my#readme"
+}
